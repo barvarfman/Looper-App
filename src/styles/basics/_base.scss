@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Tinos;
+    src: url('../fonts/static/Heebo-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+  }
+
+// html {
+//     // height: 100%;
+// }
+
+* {
+    box-sizing: border-box;
+    font-family: Tinos;
+}
+
+
+.App{
+  height: 100vh;
+}
+
+
+// ::-webkit-scrollbar {
+// 	width: 0;  /* Remove scrollbar space */
+// 	background: transparent;  /* Optional: just make scrollbar invisible */
+// }
+
+body{
+  background-image: url('../img/large.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+ 
+@media (max-width: 1000px) {
+  background-image: url('../img/medium.jpg');
+}
+@media (max-width: 500px) {
+  background-image: url('../img/small.jpg');
+}
+}
+

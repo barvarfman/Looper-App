@@ -1,0 +1,156 @@
+.home-page-container {
+    height: 94%;
+    .main-looper-container {
+        width: 570px;
+        height: 611px;
+        background-color: #ffffff85;
+        border-radius: 10px;
+        -webkit-box-shadow: -1px 1px 5px 6px rgba(255, 254, 254, 0.75);
+        -moz-box-shadow: -1px 1px 5px 6px rgba(255, 255, 255, 0.75);
+        box-shadow: -1px 1px 5px 6px rgba(255, 255, 255, 0.75);
+        @media (max-width: 750px) {
+            width: 450px;
+            height: 510px;
+        }
+        @media (max-width: 500px) {
+            width: 314px;
+            height: 405px;
+        }
+        .sound-control-btn-container {
+            width: 400px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            @media (max-width: 750px) {
+                width: 349px;
+                height: 41px;
+            }
+            @media (max-width: 500px) {
+                width: 247px;
+                height: 48px;
+            }
+            .play-btn {
+                width: 33.33%;
+                height: 100%;
+                background-color: #103b4d;
+                color: #1abeb7;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .stop-btn {
+                width: 33.33%;
+                height: 100%;
+                border-radius: 0 10px 10px 0;
+                background-color: #103b4d;
+                color: #1abeb7;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .record-btn {
+            width: 33.33%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+            background-color: #103b4d;
+            color: #1abeb7;
+            &:hover {
+                cursor: pointer;
+            }
+            .record-logo {
+                width: 27px;
+                height: 27px;
+                border: 3.5px solid #1abeb7;
+                border-radius: 50%;
+                color: #1abeb7;
+                @media (max-width: 750px) {
+                    width: 21px;
+                    height: 21px;
+                    border: 3px solid #1abeb7;
+                }
+                @media (max-width: 500px) {
+                    border: 2.3px solid #1abeb7;
+                }
+            }
+        }
+        .looper-container {
+            width: 500px;
+            height: 510px;
+            border-radius: 5px;
+            background-color: #0000008f;
+            align-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width: 750px) {
+                width: 410px;
+                height: 421px;
+            }
+            @media (max-width: 500px) {
+                width: 283px;
+                height: 301px;
+            }
+            .pad {
+                width: 150px;
+                height: 150px;
+                color: #1abeb7;
+                border-radius: 5px;
+                border: 5px double #4a4a4a;
+                box-shadow: 0 3px 6px rgb(0, 0, 0), 0 3px 6px rgb(255, 255, 255);
+                transition: 0.6s;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.03);
+                    box-shadow: 0 3px 6px rgb(0, 0, 0), 0 3px 6px rgb(0, 0, 0);
+                }
+                @media (max-width: 750px) {
+                    width: 120px;
+                    height: 120px;
+                }
+                @media (max-width: 500px) {
+                    font-size: 0.9rem;
+                    text-align: center;
+                    width: 84px;
+                    height: 88px;
+                }
+            }
+        }
+    }
+    .play-saved-sound {
+        position: absolute;
+        border-radius: 10px;
+        padding: 3px;
+        font-weight: bold;
+        right: 15px;
+        top: 11px;
+        color: #1abeb7;
+        background-color: #103b4d;
+        box-shadow: 0 1px 5px rgb(255, 255, 255), 0 2px 5px rgb(0, 0, 0);
+        @media (max-width: 500px) {
+            padding: 4px;
+            top: 13px;
+            border-radius: 50%;
+            box-shadow: 0 1px 2px rgb(255, 255, 255), 0 2px 5px rgb(0, 0, 0);
+        }
+        transition: 0.3s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+            box-shadow: 0 2px 5px rgb(255, 255, 255), 0 2px 5px rgb(0, 0, 0);
+        }
+        span {
+            margin-left: 5px;
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.stop-sound {
+    background-color: #103b4d;
+}
+
+.play-sound {
+    background-color: lighten($color: #103b4d, $amount: 10);
+}
